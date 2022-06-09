@@ -27,7 +27,7 @@ body {
     /* align-items: center; */
     /* justify-content: center; */
 
-    /* overflow: hidden; */
+    overflow: hidden;
 
     position: relative;
     /* right: 600px; */
@@ -47,7 +47,8 @@ body {
 
     margin: 0;
 
-    /* position: relative; */
+    position: relative;
+    float: left;
     /* right: 300px; */
 
     flex-shrink: 0;

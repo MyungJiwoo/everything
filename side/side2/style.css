@@ -1,0 +1,50 @@
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+.content__box {
+    height: 98.7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+
+    margin: 30px;
+    text-align: center;
+    cursor: pointer;
+
+    background-color: aliceblue;
+}
+
+.side__box {
+    width: 500px;
+    height: 500px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background-color: antiquewhite;
+}
+
+.side__list {
+    width: 2500px;
+    position: relative;
+
+    transition: all 1s ease-in-out;
+}
+
+.side {
+    width: 500px;
+    height: 500px;
+
+    text-align: center;
+    font-size: 30px;
+
+    float: left; /* 슬라이드 콘텐츠를 옆으로 정렬 */
+}
