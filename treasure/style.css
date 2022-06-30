@@ -19,7 +19,7 @@ body {
 .background {
     position: absolute;
     bottom: 0;
-    width: 120vw;
+    width: 200vw;
     height: 54vh;
     background-color: white;
     z-index: -10;
