@@ -23,6 +23,14 @@ body {
     align-items: center;
 }
 
+.collect {
+    background-color: rgb(66, 241, 81);
+}
+
+.wrong {
+    background-color: tomato;
+}
+
 ul {
     display: flex;
     flex-direction: column;
