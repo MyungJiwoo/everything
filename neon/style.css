@@ -24,11 +24,11 @@ body {
 }
 
 .collect {
-    background-color: rgb(66, 241, 81);
+    background-color: rgb(64, 156, 72);
 }
 
 .wrong {
-    background-color: tomato;
+    background-color: rgb(255, 120, 96);
 }
 
 ul {
