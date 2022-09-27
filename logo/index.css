@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #3b7466;
+}
+
+.logo_img {
+    animation: flip-vertical-fwd 2s ease-in-out;
+}
+
+.logo_title {
+    font-size: 5vw;
+    color: #ecf2f0;
+    animation: tracking-out-expand 2s;
+}
+
+@keyframes flip-vertical-fwd {
+    0% {
+        -webkit-transform: scale(1) rotate3d(1, 1, 0, 0deg);
+        transform: scale(1) rotate3d(1, 1, 0, 0deg);
+    }
+    50% {
+        -webkit-transform: scale(0.4) rotate3d(1, 1, 0, 360deg);
+        transform: scale(0.4) rotate3d(1, 1, 0, 360deg);
+        opacity: 0.1;
+    }
+    100% {
+        -webkit-transform: scale(1) rotate3d(1, 1, 0, -0deg);
+        transform: scale(1) rotate3d(1, 1, 0, 0deg);
+    }
+}
+
+@keyframes tracking-out-expand {
+    0% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0.8;
+    }
+    100% {
+        letter-spacing: 1em;
+        opacity: 0;
+    }
+}
