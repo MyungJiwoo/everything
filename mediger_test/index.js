@@ -7,12 +7,12 @@ const apiObj = JSON.parse(api);
 let beforeMeal = "beforeMeal";
 let Meal = "Meal";
 let afterMeal = "afterMeal";
-let how = { [beforeMeal]: "식전 30분", [Meal]: "식사 직후", [afterMeal]: "식후 30분" };
+let how = { [beforeMeal]: "⏱️ 식전 30분", [Meal]: "⏱️ 식사 직후", [afterMeal]: "⏱️ 식후 30분" };
 
 let Morn = "Morn";
 let After = "After";
 let Even = "Even";
-let when = { [Morn]: "아침", [After]: "점심", [Even]: "저녁" };
+let when = { [Morn]: "☀️ 아침", [After]: "🌈 점심", [Even]: "🌠 저녁" };
 
 // 기준 날짜 설정
 const today = new Date("2021-08-18");
@@ -47,10 +47,10 @@ function viewDailyMedieger(DailyMedigerList) {
     for (let i = 0; i < DailyMedigerList.length; i++) {
         // 약 리스트
         console.log(`${i + 1}. ${DailyMedigerList[i].itemName}`);
-        // how + when, 아래 방식으로 사용해야 원하는 한글로 바꿔올 수 있음
+        // how + when + many, 아래 방식으로 사용해야 원하는 한글로 바꿔올 수 있음
         const medigerWhen = DailyMedigerList[i].when;
         const medigerHow = DailyMedigerList[i].how;
-        console.log(`   ${when[medigerWhen]}, ${how[medigerHow]}`);
+        console.log(`   ${when[medigerWhen]}, ${how[medigerHow]}, 💊 ${DailyMedigerList[i].many}알 씩`);
     }
 }
 
