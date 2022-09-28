@@ -1,7 +1,9 @@
 body {
     margin: 0;
     padding: 0;
+}
 
+.splash {
     width: 100vw;
     height: 100vh;
 
@@ -11,6 +13,18 @@ body {
     align-items: center;
 
     background-color: #3b7466;
+
+    animation: intro 0.5s forwards;
+    animation-delay: 3.5s;
+}
+
+@keyframes intro {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
 
 .hello {
